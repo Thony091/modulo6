@@ -10,4 +10,10 @@ public class CapacitacionController {
 	public String crearCapacitacionForm() {
 		return "crear-capacitacion";
 	}
+	
+	@GetMapping({"listarCapacitaciones"})
+	public String showAllTraining() {
+		return "listar-capacitaciones";	
+	}
+	
 }
