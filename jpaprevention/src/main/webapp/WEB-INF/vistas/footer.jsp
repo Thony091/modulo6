@@ -8,7 +8,7 @@
     				background-color: #addadd;
     				border: 1px solid #ab47bc;
     				padding: 15px;">
-      <strong>Ejercicio Grupal 6 - Modulo 6 / JPA</strong><br>
+      <strong>Ejercicio Grupal 7 - Modulo 6 / Spring Security</strong><br>
       <small>
         © 2023 Grupo 1 | Cesar Albornoz | Jaime Godoy | Catalina Muñoz | Anthony Flores 
       </small>

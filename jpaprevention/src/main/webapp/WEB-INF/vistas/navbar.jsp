@@ -1,3 +1,4 @@
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page session="true" %>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -39,12 +40,13 @@
      	<p class="mx-3 my-2 text-primary"> Bienvenido(a) <span class="fw-bold text-capitalize"> ${sessionScope.usuario}</span></p>
      	<div class="row col-sm-3 col-l-2" style="justify-content: space-around;">
      	
-     		<a href="ServletLogout">
+     		<a href="${pageContext.request.contextPath}/logout">
      		<button class="btn btn-outline-danger " type="submit"> Cerrar Session</button>
      		</a>
      	
      	</div>
      </c:if>
+     
      
     </div>
   </div>
