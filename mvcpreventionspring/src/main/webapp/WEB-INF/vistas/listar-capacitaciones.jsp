@@ -17,7 +17,10 @@
 	 	<!-- /Font Awesome -->
 	</head>
 	<body>
-	
+		
+		<!-- Navbar -->
+	    <jsp:include page="navbar.jsp"/>
+	    <!-- End Navbar -->
 	    
 		<div class="container mt-5">
 			<div class="row ">
@@ -61,7 +64,7 @@
 			</div>
 			<div class="row ">
 				<div class="col d-flex justify-content-around">
-        			<a class="btn btn-success" href="crearCapacitacion.jsp" ><i class="mx-1 fa-solid fa-plus"></i>Solicitar Nueva Capacitación</a>
+        			<a class="btn btn-success"href="${pageContext.request.contextPath}/capacitacion/new" ><i class="mx-1 fa-solid fa-plus"></i>Solicitar Nueva Capacitación</a>
         		</div>
 			</div>
 			

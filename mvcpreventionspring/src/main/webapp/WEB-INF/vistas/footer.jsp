@@ -8,7 +8,7 @@
     				background-color: #addadd;
     				border: 1px solid #ab47bc;
     				padding: 15px;">
-      <strong>Ejercicio Grupal 4 - Modulo 6 / Controladores y Vistas</strong><br>
+      <strong>Ejercicio Grupal 4.1 - Modulo 6 / Controladores y Vistas</strong><br>
       <small>
         © 2023 Grupo 1 | Cesar Albornoz | Jaime Godoy | Catalina Muñoz | Anthony Flores 
       </small>
