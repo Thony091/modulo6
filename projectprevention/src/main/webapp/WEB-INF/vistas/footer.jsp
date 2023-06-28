@@ -8,7 +8,7 @@
     				background-color: #addadd;
     				border: 1px solid #ab47bc;
     				padding: 15px;">
-      <strong>Ejercicio Grupal 5 - Modulo 6 / JDBC Template</strong><br>
+      <strong>Ejercicio Grupal 5.1 - Modulo 6 / JDBC Template</strong><br>
       <small>
         © 2023 Grupo 1 | Cesar Albornoz | Jaime Godoy | Catalina Muñoz | Anthony Flores 
       </small>

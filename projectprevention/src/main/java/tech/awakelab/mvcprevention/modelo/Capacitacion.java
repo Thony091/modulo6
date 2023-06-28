@@ -41,6 +41,25 @@ public class Capacitacion implements Serializable{
 		this.duracion = duracion;
 		this.cantidadAsistentes = cantidadDeAsistentes;
 	}
+	
+	/**
+	 * @param rutCliente
+	 * @param dia
+	 * @param hora
+	 * @param lugar
+	 * @param duracion
+	 * @param cantidadDeAsistentes
+	 */
+	public Capacitacion( String rutCliente, String dia, String hora, String lugar, String duracion,
+			int cantidadDeAsistentes) {
+		
+		this.rutCliente = rutCliente;
+		this.dia = dia;
+		this.hora = hora;
+		this.lugar = lugar;
+		this.duracion = duracion;
+		this.cantidadAsistentes = cantidadDeAsistentes;
+	}
 
 	public int getIdentificador() {
 		return identificador;

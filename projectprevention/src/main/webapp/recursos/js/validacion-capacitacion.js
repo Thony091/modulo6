@@ -1,6 +1,4 @@
-
 //Validacion de Campos con JavaScript
-
 document.querySelector("#form-capacitacion").addEventListener("submit", function(event) {
 	event.preventDefault();
 	//*Obtener valores de los imput del DOM
