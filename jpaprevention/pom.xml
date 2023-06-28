@@ -116,7 +116,8 @@
             <scope>test</scope>
         </dependency>
         
-        <!-- Nuevas -->
+        <!-- Nuevas --> 
+        
         <dependency>
 		  <groupId>mysql</groupId>
 		  <artifactId>mysql-connector-java</artifactId>
@@ -160,7 +161,7 @@
 		</dependency>
 		<!-- Fin Nuevas -->
 		
-		<!--Spring Security -->
+	  <!--Spring Security -->
 		<dependency>
 		  <groupId>org.springframework.security</groupId>
 		  <artifactId>spring-security-core</artifactId>
@@ -185,6 +186,21 @@
 		    <version>${org.springframework-version}</version>
 		</dependency>
 		<!-- /Spring Security -->
+		
+		<!-- Log -->
+	    <dependency>
+		    <groupId>log4j</groupId>
+		    <artifactId>log4j</artifactId>
+		    <version>1.2.17</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.slf4j</groupId>
+		    <artifactId>slf4j-log4j12</artifactId>
+		    <version>1.7.30</version>
+		</dependency>
+
+		   
     </dependencies>
 
     <build>

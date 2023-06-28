@@ -35,20 +35,7 @@
           <a class="nav-link active" aria-current="page" href="${pageContext.request.contextPath}/contacto">Contacto</a>
         </li>
       </ul>   
-       
-     <div>
-     	<div class="d-flex justify-content-between align-items-center">
-    	<p class="text-white-50 mx-3 my-2"> Bienvenido <span class="fw-bold text-capitalize">
-    	<sec:authentication property="principal.username"/>
-		</span></p>
-
-	    <a href="${pageContext.request.contextPath}/logout">
-	    <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Cerrar sesión</button>
-	    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
-	    </a>
-		</div>
-     </div>
-     
+            
     </div>
   </div>
 </nav>

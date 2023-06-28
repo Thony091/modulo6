@@ -19,10 +19,10 @@
 	<body>
 	    
 	    <!-- Navbar -->
-	    <%@include file="navbar.jsp"%>
+	    <jsp:include page="navbar-home.jsp"/>
 	    <!-- End Navbar -->
-	    
-		<div class="container mt-5">
+
+				<div class="container mt-5">
 			<h1 class="text-center">Sistema Asesoria de Prevención de Riesgos</h1>
 			<p class="text-center fs-4" >Sistema de información que permitirá administrar los principales procesos que se llevan a cabo día a día</p>
 								
@@ -57,4 +57,3 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
 		<!-- Fin JavaScript de bootstrap -->
     </body>
-</html>

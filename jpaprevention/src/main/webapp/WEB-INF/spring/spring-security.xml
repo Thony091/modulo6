@@ -16,6 +16,14 @@
         	<intercept-url pattern="/capacitacion/new" access="hasAnyAuthority('ADMIN')"/>
         	<intercept-url pattern="/capacitaciones" access="hasAnyAuthority('ADMIN')"/>
         	<intercept-url pattern="/contacto" access="hasAnyAuthority('ADMIN')"/>
+        	
+        	<form-login login-page="/login"
+        		authentication-failure-url="/error"
+        		username-parameter="username"
+        		password-parameter="password"/>
+        		
+        	<csrf disabled="true"/>
+        	<logout logout-success-url="/login"/>
        </http>
         
         <authentication-manager>
