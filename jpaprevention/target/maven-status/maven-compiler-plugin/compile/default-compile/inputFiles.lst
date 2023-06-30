@@ -1,6 +1,10 @@
 C:\Users\tonyg\Desktop\curso_java\jpaprevention\src\main\java\tech\awakelab\mvcprevention\controladores\CapacitacionController.java
 C:\Users\tonyg\Desktop\curso_java\jpaprevention\src\main\java\tech\awakelab\mvcprevention\service\CapacitacionService.java
+C:\Users\tonyg\Desktop\curso_java\jpaprevention\src\main\java\tech\awakelab\mvcprevention\repository\IClienteRepository.java
+C:\Users\tonyg\Desktop\curso_java\jpaprevention\src\main\java\tech\awakelab\mvcprevention\controladores\RestClienteController.java
 C:\Users\tonyg\Desktop\curso_java\jpaprevention\src\main\java\tech\awakelab\mvcprevention\modelo\Capacitacion.java
+C:\Users\tonyg\Desktop\curso_java\jpaprevention\src\main\java\tech\awakelab\mvcprevention\modelo\Cliente.java
+C:\Users\tonyg\Desktop\curso_java\jpaprevention\src\main\java\tech\awakelab\mvcprevention\service\ClienteService.java
 C:\Users\tonyg\Desktop\curso_java\jpaprevention\src\main\java\tech\awakelab\mvcprevention\controladores\ContactoController.java
 C:\Users\tonyg\Desktop\curso_java\jpaprevention\src\main\java\tech\awakelab\mvcprevention\modelo\Contacto.java
 C:\Users\tonyg\Desktop\curso_java\jpaprevention\src\main\java\tech\awakelab\mvcprevention\controladores\HomeController.java

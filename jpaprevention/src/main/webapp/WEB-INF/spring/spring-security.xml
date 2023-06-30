@@ -10,13 +10,11 @@
         
 <!--         Damos acceso a todos los casos de uso disponibles al usuario "ADMIN" y al tipo "USER" todos menos a la vista listar-capacitaciones -->
        <http auto-config="true">
-        	<intercept-url pattern="/" access="permitAll"/>
-        	<intercept-url pattern="/capacitacion/new" access="hasAnyAuthority('USER')"/>
-        	<intercept-url pattern="/contacto" access="hasAnyAuthority('USER')"/>
-        	<intercept-url pattern="/capacitacion/new" access="hasAnyAuthority('ADMIN')"/>
-        	<intercept-url pattern="/capacitaciones" access="hasAnyAuthority('ADMIN')"/>
-        	<intercept-url pattern="/contacto" access="hasAnyAuthority('ADMIN')"/>
-        	
+		   	<intercept-url pattern="/" access="permitAll"/>
+			<intercept-url pattern="/capacitacion/new" access="hasAnyAuthority('USER', 'ADMIN')"/>
+			<intercept-url pattern="/contacto" access="hasAnyAuthority('USER', 'ADMIN')"/>
+			<intercept-url pattern="/capacitaciones" access="hasAnyAuthority('ADMIN')"/>
+		        	
         	<form-login login-page="/login"
         		authentication-failure-url="/error"
         		username-parameter="username"

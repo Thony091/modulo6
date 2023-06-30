@@ -1,7 +1,11 @@
 tech\awakelab\mvcprevention\controladores\HomeController.class
+tech\awakelab\mvcprevention\repository\IClienteRepository.class
+tech\awakelab\mvcprevention\modelo\Cliente.class
 tech\awakelab\mvcprevention\service\CapacitacionService.class
 tech\awakelab\mvcprevention\modelo\Capacitacion.class
 tech\awakelab\mvcprevention\controladores\CapacitacionController.class
 tech\awakelab\mvcprevention\repository\ICapacitacionRepository.class
 tech\awakelab\mvcprevention\modelo\Contacto.class
+tech\awakelab\mvcprevention\controladores\RestClienteController.class
 tech\awakelab\mvcprevention\controladores\ContactoController.class
+tech\awakelab\mvcprevention\service\ClienteService.class

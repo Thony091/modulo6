@@ -14,6 +14,8 @@ import org.springframework.web.servlet.ModelAndView;
 import tech.awakelab.mvcprevention.modelo.Capacitacion;
 import tech.awakelab.mvcprevention.service.CapacitacionService;
 
+
+
 @Controller
 public class CapacitacionController {
 	
@@ -24,12 +26,15 @@ public class CapacitacionController {
 	
 	@RequestMapping(path ="/capacitacion/new", method = RequestMethod.GET)
 	public ModelAndView getTrainingForm() {
-		logger.info("Obteniendo todas las capacitaciones de la base de datos");
+		
 		return new ModelAndView("crear-capacitacion","","");
 	}
 	
+	
+	
 	@RequestMapping(value="/capacitaciones", method = RequestMethod.GET)
 	public ModelAndView showAllTrainings() {
+		logger.info("Obteniendo todas las capacitaciones de la base de datos");
 		List<Capacitacion> capacitaciones = cs.getAllTrainings();
 		return new ModelAndView("listar-capacitaciones", "capacitaciones", capacitaciones);
 	}
@@ -37,6 +42,7 @@ public class CapacitacionController {
 	// Para el formulario de login
 	@RequestMapping(value="/login")
 	public ModelAndView login() {
+		logger.info("En El request de login");
 		return new ModelAndView("login");
 	}
 	
