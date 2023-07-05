@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="core" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -23,26 +24,29 @@
 
 				  <h2 class="offset-1 col-10 fs-1 text-center"><strong> Crear capacitacion </strong></h2>
 				  
-				  <form id="form-capacitacion" action="${pageContext.request.contextPath}/capacitacion/save"  method="POST" class="mx-auto col-10 offset-1 col-sm-12 col-md-11 mb-2 mt-3">
+				  <form:form id="form-capacitacion" action="${pageContext.request.contextPath}/capacitacion/save"
+				  modelAtribute="capacitacion" method="POST" class="mx-auto col-10 offset-1 col-sm-12 col-md-11 mb-2 mt-3">
 					 
 					
 					<div class="form-group fs-3 mt-4">
-						<label for="rutCliente">Rut de cliente:</label>
-						<input
-							type="text" 
-							name="rutCliente"
-							class="form-control fs-4" 
-							id="rutCliente" 
-							/>
+						<label for="rut_cliente">Rut de cliente:</label>
+						<form:input
+							path="rut_cliente" 
+ 							type="text" 
+ 							class="form-control fs-4"  
+					  	    placeholder="xx.xxx.xxx-x"
+ 							id="rutCliente"  
+ 							/> 
 						<small id="rutClienteHelp" class=" form-text text-danger" style="display:none;">El campo no puede estar vacio.</small>
 					</div>
 		  
 					<div class="form-group fs-3 mt-4">
 					  <label for="dia">Día: </label>
-					  <input 
-						  name="dia"
+					  <form:input 
+						  path="dia"
 						  class="form-control fs-4" 
 						  type="text" 
+					  	  placeholder="Lunes, Martes, Miercoles..."
 						  id="dia"
 						   />		  
 					  <small id="diaHelp" class=" form-text text-danger" style="display:none;">El campo no puede estar vacio.</small>
@@ -50,45 +54,47 @@
 		  
 					<div class="form-group fs-3 mt-4">
 					  <label for="hora">Hora:</label>
-					  <input 
+					  <form:input 
+					  		path="hora"
 					  		type="text" 
 					  		class="form-control fs-4" 
 					  		id="hora" 
-					  		name="hora"
+					  		placeholder="HH:MM"
 					  		/>
 					  <small id="horaHelp" class=" form-text text-danger" style="display:none;">El campo no puede estar vacio.</small>
 					</div>   
+					
 					<div class="form-group fs-3 mt-4">
 					  <label for="lugar">Lugar:</label>
-					  <input 
+					  <form:input 
+					  		path="lugar"
 					  		type="text" 
 					  		class="form-control fs-4" 
 					  		id="lugar" 
 					  		placeholder="-"
-					  		name="lugar"
 					  		/>
 					  <small id="lugarHelp" class=" form-text text-danger" style="display:none;">El campo no puede estar vacio.</small>
 					</div>   
 					<div class="form-group fs-3 mt-4">
 					  <label for="duracion">Duración:</label>
-					  <input 
+					  <form:input 
+					  		path="duracion"
 					  		type="text" 
 					  		class="form-control fs-4" 
 					  		id="duracion" 
 					  		placeholder="X horas"
-					  		name="duracion"
 					  		/>
 					  <small id="duracionHelp" class=" form-text text-danger" style="display:none;">El campo no puede estar vacio.</small>
 					</div>   
 					<div class="form-group fs-3 mt-4">
 					  <label for="cantAsistentes">Cantidad de asistentes:</label>
-					  <input 
+					  <form:input 
+					  		path="cantidad_asistentes"
 					  		type="number" 
 					  		class="form-control fs-4" 
 					  		id="cantAsistentes" 
 					  		placeholder="-"
-					  		name="cantAsistentes"
-					  		value=0
+					  		value="0"
 					  		/>
 					  <small id="cantAsistHelp" class=" form-text text-danger" style="display:none;">La cantidad de asistentes no puede ser 0.</small>
 					</div>
@@ -97,7 +103,7 @@
 					  <button class="btn btn-primary btn-block mt-4 fs-3 m-3" type="submit" >Registrar Capacitación</button>
 					  <small id="finalHelp" class="form-text text-danger"> </small>
 		  			</div>
-				  </form>
+				  </form:form>
 
 				</div>
 			  </main>

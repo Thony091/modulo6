@@ -29,6 +29,7 @@ public class Capacitacion {
 	@Column(name="cantidad_asistentes")
 	private int cantidadAsistentes;
 	
+
 	public int getId() {
 		return id;
 	}
